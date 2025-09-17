@@ -1,0 +1,436 @@
+.Destacados{
+  .Container-Si-te-gusto {
+    display: none;
+  }
+  
+    .Container-Destacados {
+      .DestacadoTitulo {
+            padding-left: 3rem;
+            margin-bottom: 0;
+            margin-top: 2rem;
+          
+        }
+      .limiteDestacado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        .SwiperPadre {
+          width: 100%;
+          // max-width: 1050px;
+          position: relative;
+          padding: 0 0 60px 0;
+          // //tablet
+          // @media (min-width: 768px) and (max-width: 991px) {
+          //     width: 600px;
+          // }
+          // //mobile
+          // @media (max-width: 767px) {
+          //     width: 300px;
+          // }
+        }
+        .swiper-pagination{
+          position: static;
+          margin: 1rem 0;
+        }
+      }
+    
+      .swiper {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto 1rem auto;
+  
+        // // tablet
+        // @media (min-width: 768px) and (max-width: 991px) {
+        //   width: 40%;
+        //   overflow: visible;
+        // }
+  
+        // //mobile
+        // @media (max-width: 767px) {
+        //   width: 65%;
+        //   overflow: visible;
+        // }
+    
+        .swiper-wrapper {
+          width: 90%;
+          display: flex;
+          align-items: stretch;
+          
+        }
+        .swiper-slide {
+          text-align: center;
+          align-items: center;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 40px;
+          height: auto;
+          margin-bottom: 1rem;
+          
+          // width: 200px !important; solo para pantallas menores de desktop
+    
+          // .swiper-slide img {
+          //   display: block;
+          //   width: 100%;
+          //   height: 100%;
+          // }
+    
+          .ContentSlideDestacado {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            text-align: center;
+            background: #fff;
+            height: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: auto;
+            // height: 400px;
+            img {
+              height: 460px;
+              margin: 10px auto;
+              width: 360px;
+              margin: 0 auto;
+              //para tablet y mobile
+              @media (max-width: 991px) {
+                height: 300px;
+                width: auto;
+              }
+            }
+            .ContentSlideText {
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+              margin-left: 1rem;
+              .MarcaST {
+                margin: 0;
+              }
+    
+              .NombreSlide {
+                font-weight: bold;
+                margin: 0;
+              }
+    
+              a {
+                text-decoration: none;
+                padding: 5px 35px;
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 20px;
+                background: #744391;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                margin: 1rem 2rem 2rem 1rem;
+              }
+            }
+            .Etiquetas {
+              display: flex;
+              text-align: left;
+              margin-left: 1rem;
+              gap: 5px;
+              .descuento {
+                background-color: #ffffff;
+                color: #dc3545;
+                padding: 1px 10px;
+                border-radius: 0px 10px 0px 10px;
+                border: #dc3545 solid 1px;
+                margin: 0 0 1px 0;
+              }
+              .Cobertura {
+                background-color: #4b4b4b;
+                color: #ffffff;
+                padding: 1px 10px;
+                border-radius: 0px 10px 0px 10px;
+                border: #4b4b4b solid 1px;
+                margin: 0 0 1px 0;
+              }
+            }
+          }
+        }
+    
+        
+      }
+        .swiper-pagination-bullet {
+          width: 40px;
+          height: 5px;
+          text-align: center;
+          line-height: 20px;
+          color: #000;
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.2);
+          border-radius: 25%;
+          margin-top: 1rem;
+          //mobile
+          @media (max-width: 767px) {
+              width: 20px;
+          }
+        }
+    
+        .swiper-pagination-bullet-active {
+          color: #fff;
+          background: #4b4b4b;
+        }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #4b4b4b;
+        background: #ffffff;
+        border-radius: 100%;
+        width: 3rem;
+        height: 3rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        top: 25%;
+        @media screen and (max-width: 991px) {
+          display: none;
+        }
+      }
+
+      .swiper-button-prev {
+        left: 5% !important;
+      }
+
+      .swiper-button-next{
+        right: 5% !important;
+      }
+
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, -70px);
+        right: auto;
+      }
+      .swiper-button-next:after, .swiper-button-prev:after{
+          font-size: 30px;
+      }
+  
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    }
+  
+  
+}
+
+.Si-te-gusto{
+  .Container-Si-te-gusto {
+      .SitegustoTitulo {
+            padding-left: 3rem;
+            margin-bottom: 0;
+            margin-top: 2rem;
+          
+        }
+      .limiteSitegusto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        .SwiperPadre {
+          width: 100%;
+          // max-width: 1050px;
+          position: relative;
+          padding: 0 0 60px 0;
+          // //tablet
+          // @media (min-width: 768px) and (max-width: 991px) {
+          //     width: 600px;
+          // }
+          // //mobile
+          // @media (max-width: 767px) {
+          //     width: 300px;
+          // }
+        }
+        .swiper-pagination{
+          position: static;
+          margin: 1rem 0;
+        }
+      }
+    
+      .swiper {
+        width: 90%;
+        height: 100%;
+        margin: 0 auto 1rem auto;
+  
+        // // tablet
+        // @media (min-width: 768px) and (max-width: 991px) {
+        //   width: 40%;
+        //   overflow: visible;
+        // }
+  
+        // //mobile
+        // @media (max-width: 767px) {
+        //   width: 65%;
+        //   overflow: visible;
+        // }
+    
+        .swiper-wrapper {
+          width: 90%;
+          display: flex;
+          align-items: stretch;
+          
+        }
+        .swiper-slide {
+
+          text-align: center;
+          align-items: center;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+          margin-bottom: 1rem;
+
+    
+          // .swiper-slide img {
+          //   display: block;
+          //   width: 100%;
+          //   height: 100%;
+          // }
+    
+          .ContentSlideSitegusto {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-grow: 1;
+            text-align: center;
+            background: #fff;
+            height: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            width: auto !important;
+            // height: 400px;
+            img {
+              height: 460px;
+              margin: 10px auto;
+              width: 360px;
+              margin: 0 auto;
+              //para tablet y mobile
+              @media (max-width: 991px) {
+                height: 300px;
+                width: auto !important  ;
+              }
+            }
+            .ContentSlideText {
+              display: flex;
+              flex-direction: column;
+              text-align: left;
+              margin-left: 1rem;
+              .MarcaST {
+                margin: 0;
+              }
+    
+              .NombreSlide {
+                font-weight: bold;
+                margin: 0;
+              }
+    
+              a {
+                text-decoration: none;
+                padding: 5px 35px;
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 20px;
+                background: #744391;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                text-align: center;
+                margin: 1rem 2rem 2rem 1rem;
+              }
+            }
+            .Etiquetas {
+              display: flex;
+              text-align: left;
+              margin-left: 1rem;
+              gap: 5px;
+              .descuento {
+                background-color: #ffffff;
+                color: #dc3545;
+                padding: 1px 10px;
+                border-radius: 0px 10px 0px 10px;
+                border: #dc3545 solid 1px;
+                margin: 0 0 1px 0;
+              }
+              .Cobertura {
+                background-color: #4b4b4b;
+                color: #ffffff;
+                padding: 1px 10px;
+                border-radius: 0px 10px 0px 10px;
+                border: #4b4b4b solid 1px;
+                margin: 0 0 1px 0;
+              }
+            }
+          }
+        }
+    
+        
+      }
+        .swiper-pagination-bullet {
+          width: 16px;
+          height: 16px;
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+          color: #000;
+          opacity: 1;
+          background: rgba(0, 0, 0, 0.2);
+          margin: 0px 8px 0px 8px;
+          //mobile
+          @media (max-width: 767px) {
+              width: 20px;
+          }
+        }
+    
+        .swiper-pagination-bullet-active {
+          color: #fff;
+          background: #4b4b4b;
+        }
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #4b4b4b;
+        background: #ffffff;
+        border-radius: 100%;
+        width: 3rem;
+        height: 3rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        top: 25%;
+        @media screen and (max-width: 991px) {
+          display: none;
+        }
+      }
+
+      .swiper-button-prev {
+        left: 5% !important;
+      }
+
+      .swiper-button-next{
+        right: 5% !important;
+      }
+
+      .swiper-button-prev,
+      .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, -70px);
+        right: auto;
+      }
+      .swiper-button-next:after, .swiper-button-prev:after{
+          font-size: 30px;
+      }
+  
+      .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          text-align: center;
+      }
+    }
+  
+    .Container-Destacados {
+      display: none;
+    }
+  
+  
+}
