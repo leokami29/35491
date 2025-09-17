@@ -70,13 +70,7 @@
           height: auto;
           margin-bottom: 1rem;
           
-          // width: 200px !important; solo para pantallas menores de desktop
-    
-          // .swiper-slide img {
-          //   display: block;
-          //   width: 100%;
-          //   height: 100%;
-          // }
+          
     
           .ContentSlideDestacado {
             display: flex;
@@ -91,14 +85,14 @@
             width: auto;
             // height: 400px;
             img {
-              height: 460px;
+              height: auto;
               margin: 10px auto;
-              width: 360px;
+              width: 300px;
               margin: 0 auto;
               //para tablet y mobile
               @media (max-width: 991px) {
-                height: 300px;
-                width: auto;
+                height: auto;
+                width: 300px !important;
               }
             }
             .ContentSlideText {
@@ -286,11 +280,6 @@
           margin-bottom: 1rem;
 
     
-          // .swiper-slide img {
-          //   display: block;
-          //   width: 100%;
-          //   height: 100%;
-          // }
     
           .ContentSlideSitegusto {
             display: flex;
@@ -305,14 +294,14 @@
             width: auto !important;
             // height: 400px;
             img {
-              height: 460px;
+              height: auto;
               margin: 10px auto;
-              width: 360px;
+              width: 300px;
               margin: 0 auto;
               //para tablet y mobile
               @media (max-width: 991px) {
-                height: 300px;
-                width: auto !important  ;
+                height: auto;
+                width: 300px !important  ;
               }
             }
             .ContentSlideText {
